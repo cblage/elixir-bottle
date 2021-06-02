@@ -4,6 +4,7 @@ defmodule Bottle.MixProject do
   def project do
     [
       app: :bottle,
+      package: package(),
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
