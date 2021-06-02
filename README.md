@@ -1,10 +1,8 @@
-# Bottle
-
-**TODO: Add description**
+# [Bottle](https://hex.pm/packages/bottle)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The the package can be installed from [Hex](https://hex.pm/packages/bottle),
 by adding `bottle` to your list of dependencies in `mix.exs`:
 
 ```elixir
@@ -15,7 +13,14 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/bottle](https://hexdocs.pm/bottle).
+## Usage
 
+If you add `use Bottle` at the top of your module, it will import all the custom guards. Othewise you can also import selectively, ie:
+
+```elixir
+import Bottle.Binary, only: [is_empty_binary: 1]
+```
+
+## Documentation
+
+The documentation can be found at [https://hexdocs.pm/bottle](https://hexdocs.pm/bottle).

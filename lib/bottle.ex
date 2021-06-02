@@ -2,6 +2,10 @@ defmodule Bottle do
   @moduledoc """
   Provides custom guards
   """
+
+  @doc """
+  Calling `use Bottle` will import all the guards into your context
+  """
   defmacro __using__(opts \\ []) do
     quote do
       import Bottle.Binary, unquote(opts)
