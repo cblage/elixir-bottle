@@ -4,7 +4,7 @@ defmodule Bottle.Map do
   """
 
   @doc """
-  Guard that passes when for an empty map
+  Guard that passes for an empty map
 
   ## Examples
     iex> is_empty_map(%{})
@@ -22,7 +22,7 @@ defmodule Bottle.Map do
   defguard is_empty_map(term) when is_map(term) and term == %{}
 
   @doc """
-  Guard that passes when for an map containing at least 1 element
+  Guard that passes for an map containing at least 1 element
 
   ## Examples
     iex> is_non_empty_map(%{"foo" => :bar})

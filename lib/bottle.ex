@@ -1,6 +1,6 @@
 defmodule Bottle do
   @moduledoc """
-  Provides custom guards
+  Provides custom guards to avoid boilerplate code
   """
 
   @doc """
