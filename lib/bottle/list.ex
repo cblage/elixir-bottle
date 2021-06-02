@@ -7,6 +7,7 @@ defmodule Bottle.List do
   Guard that passes for a non empty list
 
   ## Examples
+
     iex> is_non_empty_list([:foo])
     true
     
@@ -25,6 +26,7 @@ defmodule Bottle.List do
   Guard that passes for an empty list
 
   ## Examples
+
     iex> is_empty_list([])
     true
     
@@ -43,6 +45,7 @@ defmodule Bottle.List do
   Guard that passes for a list of a specific length
 
   ## Examples
+  
     iex> is_list_with_length([], 0)
     true
     

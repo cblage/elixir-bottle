@@ -7,6 +7,7 @@ defmodule Bottle.Binary do
   Guard that passes for an empty binary
 
   ## Examples
+
     iex> is_empty_binary("")
     true
     
@@ -22,6 +23,7 @@ defmodule Bottle.Binary do
   Guard that passes for a non-empty binary
 
   ## Examples
+
     iex> is_non_empty_binary("false")
     true
 
@@ -37,6 +39,7 @@ defmodule Bottle.Binary do
   Guard that passes for a binary shorter than max_length
 
   ## Examples
+
     iex> is_binary_shorter_than("foo", 200)
     true
     
@@ -56,6 +59,7 @@ defmodule Bottle.Binary do
   Guard that passes for a non-empty-binary shorter than max_length
 
   ## Examples
+  
     iex> is_non_empty_binary_shorter_than("foo", 200)
     true
     

@@ -7,6 +7,7 @@ defmodule Bottle.Map do
   Guard that passes for an empty map
 
   ## Examples
+  
     iex> is_empty_map(%{})
     true
     
@@ -25,6 +26,7 @@ defmodule Bottle.Map do
   Guard that passes for an map containing at least 1 element
 
   ## Examples
+
     iex> is_non_empty_map(%{"foo" => :bar})
     true
     
