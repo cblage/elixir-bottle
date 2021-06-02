@@ -32,7 +32,7 @@ defmodule Bottle.Number do
     false
 
     iex> is_pos_integer(0)
-    true
+    false
 
     iex> is_pos_integer(-1)
     false
