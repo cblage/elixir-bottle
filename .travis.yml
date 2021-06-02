@@ -1,8 +1,8 @@
+language: elixir
 notifications:
   email:
     recipients:
       - carlos@carloslage.net
-language: elixir
 matrix:
   include:
     - elixir: "1.10"
