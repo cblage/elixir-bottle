@@ -10,14 +10,26 @@ by adding `bottle` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:bottle, "~> 0.1.1"}
+    {:bottle, "~> 0.1.2"}
   ]
 end
 ```
 
 ## Usage
 
-If you add `use Bottle` at the top of your module, it will import all the custom guards. Othewise you can also import selectively, ie:
+Just put this on top of your module and get all the guards available in your scope
+
+```elixir
+defmodule MyModule do
+  use Bottle
+
+  def foo(bar) when is_empty_binary(bar) do
+    :empty
+  end
+end
+```
+
+You can also import the guards selectively, ie:
 
 ```elixir
 import Bottle.Binary, only: [is_empty_binary: 1]
