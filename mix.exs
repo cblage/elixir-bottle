@@ -1,7 +1,7 @@
 defmodule Bottle.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -21,7 +21,8 @@ defmodule Bottle.MixProject do
         coveralls: :test,
         "coveralls.detail": :test,
         "coveralls.post": :test,
-        "coveralls.html": :test
+        "coveralls.html": :test,
+        "coveralls.travis": :test
       ]
     ]
   end

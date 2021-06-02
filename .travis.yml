@@ -1,3 +1,6 @@
+env:
+  global:
+    - COVERALLS_REPO_TOKEN=cZ210SvbmfZwTGuJtOZtSk1ijoID9me5T
 language: elixir
 notifications:
   email:
@@ -20,9 +23,6 @@ matrix:
     - elixir: "1.12"
       otp_release: "24.0"
 script:
-  - MIX_ENV=test mix test
+  - mix test
 after_script:
-  - mix deps.get --only docs
-  - MIX_ENV=test mix coveralls --verbose
-  - MIX_ENV=test mix coveralls.json --verbose
-  - MIX_ENV=test mix coveralls.travis
+  - mix coveralls.travis --pro
