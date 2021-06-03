@@ -1,6 +1,9 @@
 # [Bottle](https://hex.pm/packages/bottle)
 
-[![Build Status](https://www.travis-ci.com/cblage/elixir-bottle.svg?branch=main)](https://www.travis-ci.com/cblage/elixir-bottle) [![Coverage Status](https://coveralls.io/repos/github/cblage/elixir-bottle/badge.svg?branch=main)](https://coveralls.io/github/cblage/elixir-bottle?branch=main)
+[![Build Status](https://www.travis-ci.com/cblage/elixir-bottle.svg?branch=main)](https://www.travis-ci.com/cblage/elixir-bottle)
+[![Coverage Status](https://coveralls.io/repos/github/cblage/elixir-bottle/badge.svg?branch=main)](https://coveralls.io/github/cblage/elixir-bottle?branch=main)
+[![Hex.pm](https://img.shields.io/hexpm/v/bottle)](https://hex.pm/packages/bottle)
+[![Documentation](https://img.shields.io/badge/hexdocs-latest-blue.svg)](https://hexdocs.pm/bottle)
 
 ## Installation
 
