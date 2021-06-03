@@ -1,7 +1,7 @@
 defmodule Bottle.MixProject do
   use Mix.Project
 
-  @version "0.1.3"
+  @version "1.0.0"
 
   def project do
     [
@@ -13,7 +13,7 @@ defmodule Bottle.MixProject do
       deps: deps(),
       docs: docs(),
       name: "Bottle",
-      description: "Provides a set of guards to reduce boilerplate code",
+      description: "Provides a set of useful guards to reduce boilerplate code",
       source_url: "https://github.com/cblage/elixir-bottle",
       homepage_url: "https://hex.pm/packages/bottle",
       test_coverage: [tool: ExCoveralls],
