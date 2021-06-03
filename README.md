@@ -41,3 +41,7 @@ import Bottle.Binary, only: [is_empty_binary: 1]
 ## Documentation
 
 The documentation can be found at [https://hexdocs.pm/bottle](https://hexdocs.pm/bottle).
+
+# License
+
+Bottle is available under the [BSD 3-Clause aka "BSD New" license](http://www.tldrlegal.com/l/BSD3)
