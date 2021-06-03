@@ -17,7 +17,7 @@ by adding `bottle` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:bottle, "~> 0.1.3"}
+    {:bottle, "~> 1.0"}
   ]
 end
 ```
