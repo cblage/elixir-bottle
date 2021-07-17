@@ -13,9 +13,6 @@ defmodule Bottle.Binary do
       
       iex> is_empty_binary("foo")
       false
-      
-      iex> is_empty_binary({"anything", "else"})
-      false
   """
   defguard is_empty_binary(sub) when is_binary(sub) and sub == ""
 
@@ -28,9 +25,6 @@ defmodule Bottle.Binary do
       true
 
       iex> is_non_empty_binary("")
-      false
-
-      iex> is_non_empty_binary({"anything", "else"})
       false
   """
   defguard is_non_empty_binary(sub) when is_binary(sub) and sub != ""
@@ -48,9 +42,6 @@ defmodule Bottle.Binary do
       
       iex> is_binary_shorter_than("foo", 2)
       false
-      
-      iex> is_binary_shorter_than({"anything", "else"}, 2)
-      false
   """
   defguard is_binary_shorter_than(sub, max_length)
            when is_binary(sub) and byte_size(sub) < max_length
@@ -67,9 +58,6 @@ defmodule Bottle.Binary do
       false
       
       iex> is_non_empty_binary_shorter_than("foo", 2)
-      false
-      
-      iex> is_non_empty_binary_shorter_than({"anything", "else"}, 2)
       false
   """
   defguard is_non_empty_binary_shorter_than(sub, max_length)
